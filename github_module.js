@@ -46,4 +46,5 @@ function getRepos(username , callback){
 	request.end();	
 }
 
+//Export the moodule(Access Publicly)
 module.exports.github = getRepos;

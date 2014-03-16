@@ -1,0 +1,25 @@
+{
+  "name": "nishantmendiratta-github-example",
+  "version": "0.0.1",
+  "description": "Get a list of github user repos",
+  "main": "github_module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nishantmendiratta/Node-JS.git"
+  },
+  "keywords": [
+    "GIT",
+    "API",
+    "NODE",
+    "MODULE"
+  ],
+  "author": "Nishant Mendiratta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishantmendiratta/Node-JS/issues"
+  },
+  "homepage": "https://github.com/nishantmendiratta/Node-JS"
+}
