@@ -6,7 +6,7 @@ var host = "127.0.0.1";
 //Get port from Connection (listening information) 
 var port = mongo.Connection.DEFAULT_PORT;
 
-//Wrapping this into a function 
+//Wrapping this into a search function 
 function getUser(id,callback){
 	//Database variable which will store our connection details
 	//mongo is connection Db is the class and node-js-intro is name of database
