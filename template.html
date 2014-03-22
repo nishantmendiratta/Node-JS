@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Bieber Tweets using socket.io</title>
+	<script src="socket.io/socket.io.js"></script>
+</head>
+<body>
+	<h4>Real-time bieber tweets</h4>
+
+	<ul id="tweets">
+		{{INITIAL_TWEETS}}
+	</ul>
+
+	<script type="text/javascript">
+		//Creating a socket which listens http://127.0.0.1:1339/
+		var socket = io.connect("http://127.0.0.1:1339/");
+
+		//Accessing ul element on page 
+		var ul = document.getElementById('tweets');
+
+		//On tweet event (when we receave a tweet)
+		socket.on('tweet',function (tweet) {
+
+			//Creating a li element
+			var li = document.createElement("li");
+			li.innerHTML  = "<strong>" + tweet.user.screen_name + ":</strong> " + tweet.text;
+			
+			//Insert ul at the top of the list
+			ul.insertBefore(li,ul.getElementsByTagName("li")[0]);
+		});
+	</script>
+</body>
+</html>
